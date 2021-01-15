@@ -33,4 +33,4 @@ const save = (data: Array<SaveAccount>, newAccount: SaveAccount): void => {
     .writeFile(PATH_ACCOUNTS, JSON.stringify(data))
     .catch(err => { throw err }); 
 }
-export { saveLoginPass };
+export { saveLoginPass, readFile };
